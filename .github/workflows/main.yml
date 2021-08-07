@@ -30,7 +30,10 @@ jobs:
         with:
           # Version range or exact version of a Python version to use, using SemVer's version range syntax.
           python-version: 3.9
-          
+      
+      - name: Python Dependency Installation
+        uses: py-actions/py-dependency-install@v2.1.0
+        
       - name: Run
         run: python _main.py
         
